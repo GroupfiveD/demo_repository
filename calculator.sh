@@ -1,12 +1,10 @@
-#!bin/bash
-#this is a random calculator file
-echo "please calculate below"
-<<<<<<< HEAD
-echo "1.add"
-echo "2. multiply"
-echo "3.divide"
-echo "4.substract"
-echo "choose your option"
-read choice
-=======
->>>>>>> d25904287c4646a401a42dcabb93f0c6395eafa1
+#!/bin/bash
+echo "my calculator"
+echo "welcome to this calculator "
+echo "enter the first number"
+read num1
+echo "enter an operator(- + / % /*)"
+read operator
+echo "enter the second number"
+read num2
+echo " $num1 $operator $num2 = $(expr $num1 $operator $num2)"
