@@ -1,0 +1,48 @@
+How to pull/push a file to a remote repository (github)
+======================================================
+
+Setting name and email
+----------------------
+To pull/push, you need to set your global name/email
+To set global name, use
+git config --global user.name "Your Name"
+To set global email, use
+git config --global user.email "your.email@example.com"
+
+git
+---
+-To initialise git in a directory, use
+git init
+-To add files to the staging area (track files), use
+  "git add <file-name>" (for a single file)
+  "git add ." (for all files in the directory)
+-Create a new version of the repository using
+  "git commit -m "Your commit message"
+-Add a remote repository using
+  "git remote add origin <Repository's URL>
+
+Pulling
+-------
+To pull a single file from github, use
+	git pull <alias-name> <branch-name> -- <file-path>
+To pull all files, use
+	git pull <alias-name> <branch-name>
+
+Pushing
+-------
+To push a single file from github, use
+	git push <alias-name> <branch-name> -- <file-path>
+To pull all files, use
+	git push <alias-name> <branch-name>
+
+NB
+==
+If an error occurs when trying to push, do the following
+-Ensure that your on the branch you want to push using
+	git switch <branch-name>
+-Fetch and merge (pull) new changes from the remote repository using
+	git pull <alias-name> <branch-name>
+ NB: If an error message shows saying "fatal: refusing to merge unrelated histories" when trying to pull, merge the remote branch to your local branch using
+	git pull origin master --allow-unrelated-histories
+-After merging and resolving any error, push again using
+	git push <alias-name> <branch-name> 
