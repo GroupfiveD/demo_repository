@@ -1,0 +1,118 @@
+Git Commands
+
+
+1. `git init`: Initializes a new Git repository in the current directory.
+
+1. `git clone [repository]`: Creates a local copy of a remote repository.
+
+1. `git add [file]`: Stages a file or changes for commit.
+
+1. `git commit -m "[message]"`: Commits the staged changes with a descriptive message.
+
+1. `git status`: Shows the status of the repository, including modified files and untracked files.
+
+1. `git diff`: Displays the changes made to the files in the repository.
+
+1. `git branch`: Lists all local branches in the repository.
+
+1. `git checkout [branch]`: Switches to the specified branch.
+
+1. `git checkout -b [branch]`: Creates and switches to a new branch.
+
+1. `git merge [branch]`: Merges the specified branch into the current branch.
+
+1. `git push [remote] [branch]`: Pushes the committed changes to a remote repository.
+
+1. `git pull [remote] [branch]`: Fetches and merges changes from a remote repository into the current branch.
+
+1. `git fetch [remote]`: Fetches changes from a remote repository.
+
+1. `git remote add [name] [url]`: Adds a new remote repository.
+
+1. `git remote -v`: Lists all remote repositories.
+
+1. `git log`: Displays the commit history.
+
+1. `git reset [file]`: Unstages a file, removing it from the staging area.
+
+1. `git reset --soft [commit]`: Moves the HEAD to a specific commit, preserving changes.
+
+1. `git reset --hard [commit]`: Discards all changes and moves the HEAD to a specific commit.
+
+1. `git stash`: Temporarily saves changes that are not ready to be committed.
+
+1. `git stash pop`: Applies the most recent stash and removes it from the stash list.
+
+1. `git tag [name]`: Creates a lightweight tag for the current commit.
+
+1. `git show [commit]`: Displays the details of a specific commit.
+
+1. `git remote remove [name]`: Removes a remote repository.
+
+1. `git rm [file]`: Removes a file from the working directory and stages the deletion.
+
+1. `git rename [old-name] [new-name]`: Renames a file and stages the rename operation.
+
+1. `git config --global user.name [name]`: Sets the name associated with your Git commits.
+
+1. `git config --global user.email [email]`: Sets the email associated with your Git commits.
+
+1. `git branch -d [branch]`: Deletes a specified branch.
+
+1. `git branch -m [old-name] [new-name]`: Renames a branch.
+
+1. `git checkout -b [branch] [commit]`: Creates a new branch at a specific commit.
+
+1. `git checkout -- [file]`: Discards changes made to a specific file.
+
+1. `git remote show [remote]`: Displays detailed information about a remote repository.
+
+1. `git remote rename [old-name] [new-name]`: Renames a remote repository.
+
+1. `git push -u [remote] [branch]`: Sets the upstream branch for the current branch.
+
+1. `git push --tags`: Pushes all tags to the remote repository.
+
+1. `git pull --rebase [remote] [branch]`: Fetches changes and rebases the current branch.
+
+1. `git fetch --prune`: Removes local references to deleted remote branches.
+
+1. `git merge --abort`: Aborts a merge in progress and restores the pre-merge state.
+
+1. `git cherry-pick [commit]`: Applies the changes of a specific commit to the current branch.
+
+1. `git rebase [branch]`: Incorporates changes from a specified branch into the current branch.
+
+1. `git rebase --interactive [branch]`: Allows interactive rebase, enabling modifications to commits.
+
+1. `git log --oneline`: Shows abbreviated commit history in a single line.
+
+1. `git log --author="[author]"`: Displays commit history filtered by the author.
+
+1. `git blame [file]`: Shows who last modified each line of a file and when.
+
+1. `git remote prune [remote]`: Removes remote tracking branches that no longer exist on the remote repository.
+
+1. `git reset --mixed [commit]`: Moves the HEAD to a specific commit and resets the staging area.
+
+1. `git reset --keep [commit]`: Moves the HEAD to a specific commit and preserves the changes.
+
+1. `git revert [commit]`: Creates a new commit that undoes the changes made in a specific commit.
+
+1. `git tag -a [name] -m "[message]"`: Creates an annotated tag with a descriptive message.
+
+1. `git tag -l`: Lists all tags in the repository.
+
+1. `git show-branch`: Displays the branch structure and their commits.
+
+1. `git clean -n`: Shows which untracked files would be removed by the `git clean` command.
+
+1. `git submodule init`: Initializes submodules within a repository.
+
+1. `git submodule update`: Updates submodules to the latest commit.
+
+1. `git archive --format=zip --output=[file.zip] [branch]`: Creates a zip archive of a specific branch.
+
+1. `git bisect start`: Starts a binary search to find the commit that introduced a bug.
+
+1. `git fsck`: Verifies the integrity of the Git repository.
