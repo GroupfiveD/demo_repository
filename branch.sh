@@ -4,7 +4,7 @@
 read -p "Enter the name of the new branch: " branch_name
 
 # Check if the branch already exists
-if git rev-parse --verify "$branch_name" >/dev/null 2>&1; then
+if git show-ref --quiet --heads "$branch_name"; then
     echo "Branch '$branch_name' already exists!"
     exit 1
 fi
